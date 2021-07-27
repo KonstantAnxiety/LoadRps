@@ -57,13 +57,3 @@ def send_rps(rps: int, redos: bool) -> None:
 if __name__ == '__main__':
 	args = parser.parse_args()
 	send_rps(args.rps, args.redos)
-	# resp = requests.post(url='http://localhost:4567/filters', json={'pattern': '(a+)*$'})
-	# print(resp.status_code, resp.json())
-	# i = 1
-	# for na in (15, 20, 22, 24, 26):
-	# 	for i in range(20):
-	# 		resp = requests.post(url='http://localhost:4567/send', json={'body': 'a' * na + '!'})
-	# 		print(na, i, resp.status_code)
-	# 		time.sleep(0.1)
-	# 	print('sleep(5)...')
-	# 	time.sleep(5)
